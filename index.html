@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ImgDesk Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { border-bottom: 2px solid #2b7a78; padding-bottom: 8px; }
+  h2 { color: #2b7a78; margin-top: 2em; }
+  code { background: #f2f2f2; padding: 2px 5px; border-radius: 3px; }
+  .updated { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>ImgDesk Privacy Policy</h1>
+<p class="updated">Last updated: August 2026</p>
+
+<p>ImgDesk ("the app", "we", "our") is developed by Justin Bannister. This
+policy explains what data the app collects and how it's used.</p>
+
+<h2>Summary</h2>
+<p><strong>ImgDesk does not collect, transmit, or store any of your image
+content, and does not include any analytics, tracking, or advertising.</strong></p>
+
+<h2>What ImgDesk does NOT do</h2>
+<ul>
+  <li>It does not upload your photos or images, their pixel content, or any
+      metadata extracted from them (including EXIF/GPS data) to any server.
+      All image conversion, resizing, compression, and metadata stripping
+      happens entirely on your device.</li>
+  <li>It does not include third-party analytics or advertising SDKs.</li>
+  <li>It does not require an account or sign-in to use any feature.</li>
+  <li>It does not access your camera, microphone, or location — image files
+      are only read from paths you explicitly choose via the standard
+      Windows file picker, drag-and-drop, or (Business tier) a folder you
+      explicitly point it at to watch.</li>
+</ul>
+
+<h2>What data is stored, and where</h2>
+<p>The following data is stored <strong>locally on your device only</strong>,
+using Windows' standard per-app application data storage
+(<code>ApplicationData.LocalSettings</code>), and is never transmitted
+anywhere:</p>
+<ul>
+  <li><strong>App preferences</strong>: selected theme (light/dark/system),
+      last-used output format, quality, and resize settings.</li>
+  <li><strong>Recent files list</strong>: file paths of recently opened
+      images, so they can appear in the "Recent Files" menu. Only the file
+      path is stored, not the image content.</li>
+  <li><strong>Trial and purchase state</strong>: the date you first launched
+      the app, a count of successful conversions, and whether you've been
+      shown the Store review prompt. This is used only to manage the free
+      trial window and avoid asking for a review more than once.</li>
+  <li><strong>Business tier settings</strong> (if unlocked): your configured
+      folder-watch path, rename pattern template, and any CLI/scripting
+      hook configuration you set up. These stay on your device and are only
+      used to run the automation you configured.</li>
+</ul>
+<p>None of the above ever leaves your device.</p>
+
+<h2>Image metadata (EXIF / GPS)</h2>
+<p>ImgDesk lets you view and, optionally, strip EXIF and GPS location data
+embedded in a photo before you share it. This processing happens entirely
+on-device: ImgDesk reads the metadata already present in a file you opened,
+never contacts any server to look it up, and never transmits it anywhere.
+The choice to keep or remove this data is entirely yours.</p>
+
+<h2>Microsoft Store purchases</h2>
+<p>If you purchase "Pro Unlock" or the "Business" tier add-on, that
+transaction is handled entirely by the Microsoft Store
+(<code>Windows.Services.Store</code> API). ImgDesk only receives a yes/no
+answer about whether you own the add-on — it does not see your payment
+details, which are handled by Microsoft under the
+<a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</p>
+
+<h2>Store review prompts</h2>
+<p>ImgDesk may ask, at most once, whether you'd like to rate the app in the
+Microsoft Store. This uses the built-in
+<code>StoreContext.RequestRateAndReviewAppAsync</code> API, which is handled
+entirely by Windows/the Microsoft Store — ImgDesk does not see or store
+your response.</p>
+
+<h2>Permissions</h2>
+<p>ImgDesk requests only the file-system access needed to open, convert, and
+save the image files you choose via the standard Windows file pickers,
+drag-and-drop, or (Business tier only) a folder you explicitly configure
+for watch-and-convert automation. It does not request network, camera,
+microphone, location, or contacts access.</p>
+
+<h2>Children's privacy</h2>
+<p>ImgDesk does not knowingly collect any personal information from anyone,
+including children, because it does not collect personal information at
+all beyond the on-device preferences described above.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, an updated version will be published at this
+same URL with a revised "Last updated" date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app can be sent to:
+<strong>justin.bannister@gmail.com</strong></p>
+
+</body>
+</html>
